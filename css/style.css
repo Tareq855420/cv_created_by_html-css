@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.left_side
+{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.profile
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.imgBox
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.imgBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile h2
+{
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4rem;
+}
+.profile h2 span
+{
+    font-size: 0.8em;
+    font-weight: 400;
+}
+.contactinfo
+{
+    padding-top: 40px;
+}
+.contactinfo .title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactinfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactinfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactinfo ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+.eduinfo
+{
+    padding-top: 40px;
+}
+.eduinfo .title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.eduinfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin-bottom: 15px;
+}
+.eduinfo h5
+{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.eduinfo h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 500;
+}
+.eduinfo h4
+{
+    color: #fff;
+    font-weight: 300;
+}
+.langinfo
+{
+    padding-top: 40px;
+}
+.langinfo .title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.langinfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin-bottom: 15px;
+}
+.langinfo ul li h4
+{
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.langinfo ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+.links
+{
+    padding-top: 40px;
+}
+.links .title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.links ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.links ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 22px;
+    color: #03a9f4;
+}
+.links ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+
+.right_side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about
+{
+    margin-bottom: 50px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    color: #333;
+    text-align: justify;
+}
+.skills
+{
+    margin-bottom: 50px;
+}
+.skills ul li
+{
+    position: relative;
+    list-style: none;
+    margin-bottom: 15px;
+}
+.skills h4
+{
+    color: #003147;
+    font-weight: 500;
+}
+.skills p
+{
+    color: #333;
+    text-align: justify;
+}
+.interest
+{
+    margin-bottom: 50px;
+}
+.interest ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa
+{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+}
+.achiev
+{
+    margin-bottom: 50px;
+}
+.achiev ul li
+{
+    position: relative;
+    list-style: disc;
+    margin-bottom: 15px;
+}
+.achiev h4
+{
+    color: #003147;
+    font-weight: 500;
+}
+.achiev h5
+{
+    color: #003147;
+    font-weight: 500;
+}
+.project
+{
+    margin-bottom: 50px;
+}
+.project ul li
+{
+    position: relative;
+    list-style: disc;
+    margin: 10px 0;
+}
+.project ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #333;
+}
+.project ul li span
+{
+    color: #003147;
+    font-weight: 500;
+    font-size: 16px;
+}
+.refer
+{
+    margin-bottom: 50px;
+}
+.refer h3
+{
+    color: #003147;
+    font-weight: 600;
+}
+.refer h4
+{
+    color: #003147;
+    font-weight: 500;
+}
+.refer h5
+{
+    color: #003147;
+    font-weight: 500;
+}
+.refer p
+{
+    color: #333;
+    text-align: justify;
+}
